@@ -1,0 +1,23 @@
+.sidebar-section {
+    width: 25%;
+    height: 100%;
+}
+
+.header-section {
+    min-height: 300px;
+}
+
+.nav-categories {
+    min-height: 80px;
+}
+.list-inline li {
+    list-style: none;
+    margin: 0 20px;
+    display: inline;
+}
+
+.thumbnail-project {
+    background: teal;
+    height: 150px;
+    width: 150px;
+}

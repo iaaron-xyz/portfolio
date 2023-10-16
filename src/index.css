@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    box-sizing: content-box;
-  }
-  #root {
-    display: flex;
-  }
+    * {
+        box-sizing: content-box;
+    }
+    #root {
+        display: flex;
+    }
 }
