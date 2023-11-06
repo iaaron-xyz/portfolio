@@ -2,7 +2,7 @@ const MainSection = () => {
   return (
     <main className='flex flex-col w-full m-4 p-4'>
       <NavbarMainSection />
-      <HeaderSection />
+      <BannerSection />
       <NavbarCategoriesSection />
       <ProjectsSection />
     </main>
@@ -10,11 +10,20 @@ const MainSection = () => {
 };
 
 const NavbarMainSection = () => {
-  return <nav className='bg-gray-400'>Main navbar</nav>;
+  return <nav className='bg-yellow-500'>Main navbar</nav>;
 };
 
-const HeaderSection = () => {
-  return <header className='bg-zinc-400'>Header Section</header>;
+const BannerSection = () => {
+  return (
+    <header className='bg-zinc-400'>
+      <h1>Frontend developer</h1>
+      <p>I focus on clean, beautiful and accesible interfaces.</p>
+      <ul>
+        <li>Github</li>
+        <li>linkedIn</li>
+      </ul>
+    </header>
+  );
 };
 
 const NavbarCategoriesSection = () => {
