@@ -17,6 +17,13 @@
     border-radius: 100%;
 }
 
+/* .navbar-main-floating {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+} */
+
 .project {
     background: teal;
     border: 1px solid red;
