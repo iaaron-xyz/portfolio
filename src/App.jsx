@@ -1,4 +1,4 @@
-import MainSection from "./components/mainSection";
+import MainSection from "./components/MainSection";
 import "./styles/App.css";
 
 function App() {
