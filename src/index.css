@@ -4,14 +4,15 @@
 
 @layer base {
     * {
-        box-sizing: content-box;
+        box-sizing: border-box;
+        /* border: 1px solid red; */
     }
 
-    /* html,
+    html,
     body,
     #root {
         height: 100%;
-    } */
+    }
 
     #root {
         display: flex;
