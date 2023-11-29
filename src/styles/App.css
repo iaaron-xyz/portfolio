@@ -3,7 +3,6 @@
     margin: 0 20px;
     display: inline;
 }
-
 .contact-button {
     display: flex;
     background: blue;
@@ -15,18 +14,4 @@
     text-align: center;
     padding: 5px;
     border-radius: 100%;
-}
-
-/* .navbar-main-floating {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
-} */
-
-.project {
-    background: teal;
-    border: 1px solid red;
-    height: 300px;
-    width: 420px;
 }
