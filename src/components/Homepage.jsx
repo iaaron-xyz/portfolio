@@ -8,9 +8,9 @@ const Homepage = () => {
 
 const HomeCover = () => {
   return (
-    <section className='bg-slate-300 h-full flex flex-col justify-center p-24'>
-      {/* <HomeCoverArt /> */}
-      <div className='p-4'>
+    <section className='bg-slate-100 h-full flex flex-col justify-center p-24'>
+      <HomeCoverArt />
+      <div className='p-4 z-10'>
         <HomeCoverText />
         <HomeCoverSubtext />
         <HomeCoverLinks />
@@ -57,12 +57,12 @@ const HomeCoverLinks = () => {
   );
 };
 
-// const HomeCoverArt = () => {
-//   return (
-//     <>
-//       <div className='rounded-full border-2 border-red-900 h-96 w-96 -z-10 absolute'></div>
-//     </>
-//   );
-// };
+const HomeCoverArt = () => {
+  return (
+    <div className='self-center flex flex-col items-center w-full'>
+      <div className='bg-circle bg-white'></div>
+    </div>
+  );
+};
 
 export default Homepage;

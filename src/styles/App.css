@@ -3,15 +3,10 @@
     margin: 0 20px;
     display: inline;
 }
-.contact-button {
-    display: flex;
-    background: blue;
-    color: antiquewhite;
-    height: 100px;
-    width: 100px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 5px;
-    border-radius: 100%;
+
+.bg-circle {
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+    position: absolute;
 }
