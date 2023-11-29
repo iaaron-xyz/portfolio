@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 const Homepage = () => {
   return (
     <div className='w-full flex flex-col justify-center'>
@@ -58,9 +60,28 @@ const HomeCoverLinks = () => {
 };
 
 const HomeCoverArt = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  // Calculate the pointer position in real time
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      setPosition({ x: event.clientX, y: event.clientY });
+    };
+    document.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  // Add a new variable style relative to the pointer position
+  const circleMovement = {
+    transform: `translate(${(-window.innerWidth / 2 + position.x) / 20}px,
+      ${(-window.innerHeight / 2 + position.y) / 20}px)`,
+  };
+
   return (
     <div className='self-center flex flex-col items-center w-full'>
-      <div className='bg-circle bg-white'></div>
+      <div style={circleMovement} className='bg-circle bg-white'></div>
     </div>
   );
 };
