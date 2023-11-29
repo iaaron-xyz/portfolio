@@ -1,16 +1,8 @@
 import { useState, useEffect } from "react";
 
-const Homepage = () => {
-  return (
-    <div className='w-full flex flex-col justify-center'>
-      <HomeCover />
-    </div>
-  );
-};
-
 const HomeCover = () => {
   return (
-    <section className='bg-slate-100 h-full flex flex-col justify-center p-24'>
+    <section className='bg-slate-100 h-screen flex flex-col justify-center p-24'>
       <HomeCoverArt />
       <div className='p-4 z-10'>
         <HomeCoverText />
@@ -86,4 +78,4 @@ const HomeCoverArt = () => {
   );
 };
 
-export default Homepage;
+export default HomeCover;
