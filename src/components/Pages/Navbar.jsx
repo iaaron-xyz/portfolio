@@ -1,19 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [scrollValue, setScrollValue] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Actualiza el valor de scrollValue
-      setScrollValue(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // update scroll value if value has changed
+  const handleScroll = () => {
+    setScrollValue(window.scrollY);
+  };
+  // event listener for scroll action
+  window.addEventListener("scroll", handleScroll);
 
+  // define classes depending on scroll value
   let classNav = "z-20 fixed w-full p-8";
   if (scrollValue > 10) {
     classNav += " nav-scroll";
