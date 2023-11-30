@@ -10,3 +10,8 @@
     border-radius: 500px;
     position: absolute;
 }
+
+.project-image {
+    min-height: 300px;
+    max-width: 300px;
+}
