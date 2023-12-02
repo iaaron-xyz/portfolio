@@ -15,7 +15,7 @@ const HomeCover = () => {
 
 const HomeCoverText = () => {
   return (
-    <div className='text-7xl mb-6'>
+    <div className='text-7xl mb-6 font-chillaxRegular'>
       <h1>
         Front-end <strong>Developer</strong>
       </h1>
