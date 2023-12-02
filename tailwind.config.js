@@ -12,6 +12,13 @@ export default {
         chillaxMedium: ['Chillax-Medium', 'sans-serif'],
         chillaxSemibold: ['Chillax-Semibold', 'sans-serif'],
         chillaxBold: ['Chillax-Bold', 'sans-serif'],
+        satoshiLight: ['Satoshi-Light', 'sans-serif'],
+        satoshiLightItalic: ['Satoshi-LightItalic', 'sans-serif'],
+        satoshiRegular: ['Satoshi-Regular', 'sans-serif'],
+        satoshiItalic: ['Satoshi-Italic', 'sans-serif'],
+        satoshiMedium: ['Satoshi-Medium', 'sans-serif'],
+        satoshiBold: ['Satoshi-Bold', 'sans-serif'],
+        satoshiBlack: ['Satoshi-Black', 'sans-serif'],
       }
     },
   },

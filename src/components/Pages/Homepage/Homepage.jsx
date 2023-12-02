@@ -5,7 +5,7 @@ import Footer from "../Footer";
 
 const Homepage = () => {
   return (
-    <div className='w-full flex flex-col justify-center'>
+    <div className='w-full flex flex-col justify-center font-satoshiRegular'>
       <HomeCover />
       <HomeAbout />
       <HomeProjects />
