@@ -43,15 +43,15 @@ const HomeCoverLinks = () => {
     <div className='mt-8 text-2xl'>
       <LinkPage text={"see my work"} />
       <div>
-        <a href='' className='mr-4'>
+        <a href='' className='mr-4 hover:underline hover:underline-offset-8'>
           LinkedIn
         </a>{" "}
         {"//"}{" "}
-        <a href='' className='mx-4'>
+        <a href='' className='mx-4 hover:underline hover:underline-offset-8'>
           Github
         </a>{" "}
         {"//"}{" "}
-        <a href='' className='ml-4'>
+        <a href='' className='ml-4 hover:underline hover:underline-offset-8'>
           Artstation
         </a>
       </div>
