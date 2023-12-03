@@ -1,4 +1,4 @@
-import LinkPage from "../Pieces/LinkPage";
+import LinkPage from "../Parts/LinkPage";
 
 const Footer = () => {
   return (

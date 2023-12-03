@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import LinkPage from "../../pieces/LinkPage";
+import LinkPage from "../../Parts/LinkPage";
 
 const HomeCover = () => {
   return (
