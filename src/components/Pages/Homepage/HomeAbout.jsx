@@ -1,3 +1,5 @@
+import LinkPage from "../../Pieces/LinkPage";
+
 const HomeAbout = () => {
   return (
     <section className='flex align-center mx-48'>
@@ -19,18 +21,15 @@ const HomeAboutContent = () => {
   return (
     <div className='text-2xl leading-9'>
       <p className='mb-6'>
-        Hi! I&apos;m Aaron. I am a Front-end React Developer. My work focus on
-        create beautiful and easy to use interfaces for websites and webapps and
-        any desktop app that supports the React ecosystem.
+        Hi! I&apos;m Aaron. I am a Front-end React Developer. My work focus in
+        creating beautiful and easy to use interfaces for websites and web-apps.
       </p>
       <p className='mb-24'>
         Besides that, I also have the skills to work as data scientist or 3D
         Game Artist, click on the more details button to check out my portfolios
-        if you are interested.
+        and get more detailed information about me.
       </p>
-      <p className='font-satoshiBlack'>
-        <a href=''>MORE DETAILS --{">"}</a>
-      </p>
+      <LinkPage text={"more details"} />
     </div>
   );
 };

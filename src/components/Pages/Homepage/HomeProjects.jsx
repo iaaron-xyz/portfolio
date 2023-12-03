@@ -1,3 +1,5 @@
+import LinkPage from "../../Pieces/LinkPage";
+
 const HomeProjects = () => {
   return (
     <section className='bg-slate-100 py-36'>
@@ -83,19 +85,17 @@ const HomeProjectsInfo = () => {
 
 const HomeProjectInfoBtns = () => {
   return (
-    <div className='flex-1 text-xl font-satoshiBlack'>
-      <a href='' className='mr-12'>
-        PROJECT --{">"}
-      </a>
-      <a href=''>LIVE SITE --{">"}</a>
+    <div className='flex-1 flex text-xl font-satoshiBlack'>
+      <LinkPage text={"project"} />
+      <LinkPage text={"live site"} extraClasses={"ml-12"} />
     </div>
   );
 };
 
 const HomeProjectsMore = () => {
   return (
-    <div className='flex justify-center mt-20 text-xl font-satoshiBlack'>
-      <a href=''>SEE ALL MY WORKS AND PROJECTS --{">"}</a>
+    <div className='flex justify-center mt-28 text-xl'>
+      <LinkPage text={"see all my works and projects"} />
     </div>
   );
 };

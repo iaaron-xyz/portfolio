@@ -1,3 +1,5 @@
+import LinkPage from "../Pieces/LinkPage";
+
 const Footer = () => {
   return (
     <footer className='p-16 flex flex-col items-center justify-center text-slate-100'>
@@ -14,9 +16,11 @@ const FooterContent = () => {
         Let&apos;s Work Together!
       </h2>
       <h4 className='text-green-400 text-xl'>Ready to work remotely</h4>
-      <a href='' className='block my-36 text-xl font-satoshiBlack'>
-        LET&apos;S GET IN TOUCH! --{">"}
-      </a>
+      <LinkPage
+        text={"LET'S GET IN TOUCH!"}
+        iconColor='white'
+        extraClasses='my-24 text-2xl'
+      />
       <div className='mb-32'>
         <a href='' className='mx-8'>
           LinkedIn

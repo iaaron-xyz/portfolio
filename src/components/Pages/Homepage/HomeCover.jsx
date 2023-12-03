@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import LinkPage from "../../pieces/LinkPage";
 
 const HomeCover = () => {
   return (
@@ -40,9 +41,7 @@ const HomeCoverSubtext = () => {
 const HomeCoverLinks = () => {
   return (
     <div className='mt-8 text-2xl'>
-      <a href='' className='my-12 block font-satoshiBlack'>
-        SEE MY WORK --{">"}
-      </a>
+      <LinkPage text={"see my work"} />
       <div>
         <a href='' className='mr-4'>
           LinkedIn
