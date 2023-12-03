@@ -11,13 +11,13 @@ const Navbar = () => {
   window.addEventListener("scroll", handleScroll);
 
   // define classes depending on scroll value
-  let classNav = "z-20 fixed w-full p-8";
+  let classNav = "z-20 fixed w-full p-10";
   if (scrollValue > 10) {
     classNav += " nav-scroll";
   }
 
   return (
-    <nav className={classNav}>
+    <nav className={`${classNav} font-chillaxMedium`}>
       <ul className='ml-auto flex justify-end'>
         <li className='w-32 text-center'>
           <a href='' className='mx-6 hover:font-bold relative'>

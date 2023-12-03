@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 
 const HomeCover = () => {
   return (
-    <section className='bg-slate-100 h-screen flex flex-col justify-center p-24'>
+    <section className='bg-slate-100 h-screen flex flex-col justify-center'>
       <HomeCoverArt />
-      <div className='p-4 z-10'>
+      <div className='ml-48 z-10'>
         <HomeCoverText />
         <HomeCoverSubtext />
         <HomeCoverLinks />
@@ -32,7 +32,7 @@ const HomeCoverText = () => {
 const HomeCoverSubtext = () => {
   return (
     <>
-      <h2 className='text-2xl p-4'>I am a Frontend React Developer</h2>
+      <h2 className='text-2xl'>I am a Frontend React Developer</h2>
     </>
   );
 };
@@ -40,12 +40,21 @@ const HomeCoverSubtext = () => {
 const HomeCoverLinks = () => {
   return (
     <div className='mt-8 text-2xl'>
-      <a href='' className='my-12 block font-bold'>
+      <a href='' className='my-12 block font-satoshiBlack'>
         SEE MY WORK --{">"}
       </a>
       <div>
-        <a href=''>LinkedIn</a> {"//"} <a href=''>Github</a> {"//"}{" "}
-        <a href=''>Artstation</a>
+        <a href='' className='mr-4'>
+          LinkedIn
+        </a>{" "}
+        {"//"}{" "}
+        <a href='' className='mx-4'>
+          Github
+        </a>{" "}
+        {"//"}{" "}
+        <a href='' className='ml-4'>
+          Artstation
+        </a>
       </div>
     </div>
   );

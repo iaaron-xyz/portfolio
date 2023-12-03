@@ -1,6 +1,6 @@
 const HomeAbout = () => {
   return (
-    <section className='flex align-center'>
+    <section className='flex align-center mx-48'>
       <HomeAboutDiv content={<HomeAboutTitle />} />
       <HomeAboutDiv content={<HomeAboutContent />} />
     </section>
@@ -12,12 +12,12 @@ const HomeAboutDiv = ({ content }) => {
 };
 
 const HomeAboutTitle = () => {
-  return <h2 className='text-7xl text-center'>About Me</h2>;
+  return <h2 className='text-7xl font-chillaxSemibold'>About Me</h2>;
 };
 
 const HomeAboutContent = () => {
   return (
-    <div className='text-2xl w-3/4'>
+    <div className='text-2xl leading-9'>
       <p className='mb-6'>
         Hi! I&apos;m Aaron. I am a Front-end React Developer. My work focus on
         create beautiful and easy to use interfaces for websites and webapps and
@@ -28,7 +28,7 @@ const HomeAboutContent = () => {
         Game Artist, click on the more details button to check out my portfolios
         if you are interested.
       </p>
-      <p>
+      <p className='font-satoshiBlack'>
         <a href=''>MORE DETAILS --{">"}</a>
       </p>
     </div>
