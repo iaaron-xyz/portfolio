@@ -6,15 +6,19 @@ const LinkPage = ({
   extraClasses = "",
   iconColor = "black",
 }) => {
+  let arrowClasses = "";
+  if (iconColor === "white") {
+    arrowClasses = "ml-3 h-6 stroke-1 fill-white stroke-white";
+  } else {
+    arrowClasses = "ml-3 h-6 stroke-1 fill-black stroke-black";
+  }
+
   return (
     <a
       href={url}
       className={`flex items-center my-12 font-satoshiBlack ${extraClasses}`}
     >
-      {text.toUpperCase()}{" "}
-      <Arrow
-        className={`ml-3 h-6 rotate-45 stroke-1 fill-${iconColor} stroke-${iconColor}`}
-      />
+      {text.toUpperCase()} <Arrow className={arrowClasses} />
     </a>
   );
 };
