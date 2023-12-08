@@ -85,7 +85,7 @@ const HomeCoverArt = () => {
 
   return (
     <div className='self-center flex flex-col items-center w-full'>
-      <div style={circleMovement} className='bg-circle shadow-lg'></div>
+      <div style={circleMovement} className='bg-circle'></div>
     </div>
   );
 };
