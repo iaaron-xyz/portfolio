@@ -3,7 +3,7 @@ import LinkPage from "../../Parts/LinkPage";
 
 const HomeCover = () => {
   return (
-    <section className='bg-slate-100 h-screen flex flex-col justify-center'>
+    <section className='bg-zinc-100 h-screen flex flex-col justify-center'>
       <HomeCoverArt />
       <div className='ml-48 z-10'>
         <HomeCoverText />
@@ -16,15 +16,15 @@ const HomeCover = () => {
 
 const HomeCoverText = () => {
   return (
-    <div className='text-7xl mb-6 font-chillaxRegular'>
+    <div className='text-7xl mb-12 font-chillaxRegular'>
       <h1>
-        Front-end <strong>Developer</strong>
+        Front-end <strong className='font-chillaxMedium'>Developer</strong>
       </h1>
       <h1>
-        Computational <strong>Scientist</strong>
+        Computational <strong className='font-chillaxMedium'>Scientist</strong>
       </h1>
       <h1>
-        & Game <strong>Artist</strong>
+        & Game <strong className='font-chillaxMedium'>Artist</strong>
       </h1>
     </div>
   );
@@ -33,7 +33,11 @@ const HomeCoverText = () => {
 const HomeCoverSubtext = () => {
   return (
     <>
-      <h2 className='text-2xl'>I am a Frontend React Developer</h2>
+      <h2 className='text-2xl w-1/2'>
+        Hi! I&apos;m Aaron, a front-end React developer, a physicist and a 3D
+        artist. I love to work at the intersection of science, art and
+        programming.
+      </h2>
     </>
   );
 };
@@ -41,7 +45,7 @@ const HomeCoverSubtext = () => {
 const HomeCoverLinks = () => {
   return (
     <div className='mt-8 text-2xl'>
-      <LinkPage text={"see my work"} />
+      <LinkPage text={"see my work"} extraClasses='my-24' />
       <div>
         <a href='' className='mr-4 hover:underline hover:underline-offset-8'>
           LinkedIn
@@ -81,7 +85,7 @@ const HomeCoverArt = () => {
 
   return (
     <div className='self-center flex flex-col items-center w-full'>
-      <div style={circleMovement} className='bg-circle bg-white'></div>
+      <div style={circleMovement} className='bg-circle shadow-lg'></div>
     </div>
   );
 };

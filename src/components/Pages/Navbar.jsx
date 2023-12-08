@@ -20,22 +20,22 @@ const Navbar = () => {
     <nav className={`${classNav} font-chillaxMedium`}>
       <ul className='ml-auto flex justify-end'>
         <li className='w-32 text-center'>
-          <a href='' className='mx-6 hover:font-bold relative'>
+          <a href='' className='mx-6 hover:font-chillaxBold relative'>
             HOME
           </a>
         </li>
         <li className='w-32 text-center'>
-          <a href='' className='mx-6 hover:font-bold relative'>
+          <a href='' className='mx-6 hover:font-chillaxBold relative'>
             ABOUT
           </a>
         </li>
         <li className='w-32 text-center'>
-          <a href='' className='mx-6 hover:font-bold relative'>
+          <a href='' className='mx-6 hover:font-chillaxBold relative'>
             PROJECTS
           </a>
         </li>
         <li className='w-32 text-center'>
-          <a href='' className='mx-6 hover:font-bold relative'>
+          <a href='' className='mx-6 hover:font-chillaxBold relative'>
             CONTACT
           </a>
         </li>

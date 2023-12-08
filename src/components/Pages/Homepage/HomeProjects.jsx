@@ -2,7 +2,7 @@ import LinkPage from "../../Parts/LinkPage";
 
 const HomeProjects = () => {
   return (
-    <section className='bg-slate-100 py-36'>
+    <section className='bg-zinc-100 py-36'>
       <HomeProjectsTitle />
       <HomeProjectsWorks />
       <HomeProjectsMore />
@@ -32,7 +32,7 @@ const HomeProjectsWorks = () => {
 
 const ProjectLeftToRight = () => {
   return (
-    <div className='flex px-48 py-8 hover:bg-slate-200'>
+    <div className='flex px-48 py-8'>
       {/* Image container */}
       <HomeProjectsImage />
       {/* Text container */}
@@ -45,7 +45,7 @@ const ProjectLeftToRight = () => {
 
 const ProjectRightToLeft = () => {
   return (
-    <div className='flex px-48 py-8 hover:bg-slate-200'>
+    <div className='flex px-48 py-8'>
       {/* Text container */}
       <div className='flex-1 flex flex-col'>
         <HomeProjectsInfo alignValue={"ml-auto"} />
