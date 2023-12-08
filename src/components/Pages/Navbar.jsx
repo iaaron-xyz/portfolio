@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrollValue, setScrollValue] = useState(0);
@@ -20,24 +21,24 @@ const Navbar = () => {
     <nav className={`${classNav} font-chillaxMedium`}>
       <ul className='ml-auto flex justify-end'>
         <li className='w-32 text-center'>
-          <a href='' className='mx-6 hover:font-chillaxBold relative'>
+          <Link to='/' className='mx-6 hover:font-chillaxBold relative'>
             HOME
-          </a>
+          </Link>
         </li>
         <li className='w-32 text-center'>
-          <a href='' className='mx-6 hover:font-chillaxBold relative'>
+          <Link to='about' className='mx-6 hover:font-chillaxBold relative'>
             ABOUT
-          </a>
+          </Link>
         </li>
         <li className='w-32 text-center'>
-          <a href='' className='mx-6 hover:font-chillaxBold relative'>
+          <Link to='projects' className='mx-6 hover:font-chillaxBold relative'>
             PROJECTS
-          </a>
+          </Link>
         </li>
         <li className='w-32 text-center'>
-          <a href='' className='mx-6 hover:font-chillaxBold relative'>
+          <Link to='contact' className='mx-6 hover:font-chillaxBold relative'>
             CONTACT
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
