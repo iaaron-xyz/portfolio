@@ -17,10 +17,10 @@ const HomeCover = () => {
 const HomeCoverText = () => {
   return (
     <div className='text-7xl mb-12 font-chillaxRegular'>
-      <h1>
+      <h1 className='mb-2'>
         Front-end <strong className='font-chillaxMedium'>Developer</strong>
       </h1>
-      <h1>
+      <h1 className='mb-2'>
         Computational <strong className='font-chillaxMedium'>Scientist</strong>
       </h1>
       <h1>
