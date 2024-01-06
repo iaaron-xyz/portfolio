@@ -1,4 +1,6 @@
 import HeroSection from "../../layouts/HeroSectionTemplate";
+import skills from "../../data/skills";
+import Footer from "../../layouts/Footer";
 
 const AboutPage = () => {
   return (
@@ -6,13 +8,14 @@ const AboutPage = () => {
       <HeroSection title={"About Me"} />
       <AboutContentDesc />
       <AboutContentSkills />
+      <Footer />
     </div>
   );
 };
 
 const AboutContentDesc = () => {
   return (
-    <div className='flex'>
+    <div className='flex mb-48'>
       {/* title */}
       <AboutMeSectionTitle title='Description' />
 
@@ -38,27 +41,14 @@ const AboutContentDesc = () => {
 };
 
 const AboutContentSkills = () => {
-  const skillsArray = [
-    {
-      id: 1,
-      title: "Front-end",
-      list: ["JavaScript", "HTML", "CSS", "React"],
-    },
-    {
-      id: 2,
-      title: "Tools",
-      list: ["Git/Github", "VSCode", "Docker"],
-    },
-  ];
-
   return (
-    <div className='flex mt-48'>
+    <div className='flex mb-48'>
       {/* title */}
       <AboutMeSectionTitle title='My Skills & Knowledge' />
 
       {/* Text content */}
       <div className='flex-1 text-2xl'>
-        {skillsArray.map((skillSection) => {
+        {skills.map((skillSection) => {
           return (
             <SkillsField
               key={skillSection.id}
@@ -83,14 +73,14 @@ const AboutMeSectionTitle = ({ title }) => {
 };
 
 const AboutMeSectionTextParagraph = ({ p }) => {
-  return <p className='pr-48 mb-8'>{p}</p>;
+  return <p className='w-2/3 mb-8 leading-'>{p}</p>;
 };
 
 const SkillsField = ({ title, skillsList }) => {
   const listSize = skillsList.length;
 
   return (
-    <div className='mb-12'>
+    <div className='mb-16 w-2/3'>
       <h3 className='text-3xl font-satoshiBold'>{title}</h3>
       {skillsList.map((skill, index) => {
         // Add a bullet item
