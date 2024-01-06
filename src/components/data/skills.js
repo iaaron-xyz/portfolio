@@ -25,12 +25,12 @@ const skills = [
     list: ["SQL", "SQLite"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Design and Edition Tools",
     list: ["Photoshop", "Illustrator", "Davinci Resolve", "After Effects"],
   },
   {
-    id: 5,
+    id: 7,
     title: "Other Favorite Tools",
     list: ["Notion", "Obsidian"],
   },
