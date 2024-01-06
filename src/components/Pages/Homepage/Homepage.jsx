@@ -1,7 +1,7 @@
 import HomeCover from "./HomeCover";
 import HomeAbout from "./HomeAbout";
 import HomeProjects from "./HomeProjects";
-import Footer from "../Footer";
+import Footer from "../../layouts/Footer";
 
 const Homepage = () => {
   return (
