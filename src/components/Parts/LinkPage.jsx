@@ -16,7 +16,7 @@ const LinkPage = ({
   return (
     <a
       href={url}
-      className={`flex items-center my-12 font-satoshiBlack ${extraClasses}`}
+      className={`flex items-center font-satoshiBlack ${extraClasses}`}
     >
       {text.toUpperCase()} <Arrow className={arrowClasses} />
     </a>

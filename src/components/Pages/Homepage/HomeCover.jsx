@@ -5,7 +5,7 @@ const HomeCover = () => {
   return (
     <section className='bg-zinc-100 h-screen flex flex-col justify-center'>
       <HomeCoverArt />
-      <div className='ml-48 z-10'>
+      <div className='z-10'>
         <HomeCoverText />
         <HomeCoverSubtext />
         <HomeCoverLinks />
@@ -16,15 +16,9 @@ const HomeCover = () => {
 
 const HomeCoverText = () => {
   return (
-    <div className='text-7xl mb-12 font-chillaxRegular'>
+    <div className='main-cover-title mb-16 font-chillaxRegular'>
       <h1 className='mb-2'>
-        Front-end <strong className='font-chillaxMedium'>Developer</strong>
-      </h1>
-      <h1 className='mb-2'>
-        Computational <strong className='font-chillaxMedium'>Scientist</strong>
-      </h1>
-      <h1>
-        & Game <strong className='font-chillaxMedium'>Artist</strong>
+        FRONT-END <strong className='font-chillaxSemibold'>DEVELOPER</strong>
       </h1>
     </div>
   );
@@ -33,10 +27,10 @@ const HomeCoverText = () => {
 const HomeCoverSubtext = () => {
   return (
     <>
-      <h2 className='text-2xl w-1/2'>
-        Hi! I&apos;m Aaron, a front-end React developer, a physicist and a 3D
-        artist. I love to work at the intersection of science, art and
-        programming.
+      <h2 className='text-3xl text-center mb-32 px-96 font-satoshiMedium'>
+        I work with React and Vue. As developer I am a problem solver ready to
+        take the project from a base concept to interactive and beautiful
+        interfaces focused on the user experience.
       </h2>
     </>
   );
@@ -44,8 +38,8 @@ const HomeCoverSubtext = () => {
 
 const HomeCoverLinks = () => {
   return (
-    <div className='mt-8 text-2xl'>
-      <LinkPage text={"see my work"} extraClasses='my-24' />
+    <div className='mt-48 text-2xl flex justify-between px-48'>
+      <LinkPage text={"see my work"} extraClasses='' />
       <div>
         <a href='' className='mr-4 hover:underline hover:underline-offset-8'>
           LinkedIn
