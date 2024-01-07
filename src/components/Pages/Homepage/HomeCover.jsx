@@ -17,7 +17,7 @@ const HomeCover = () => {
 const HomeCoverText = () => {
   return (
     <div className='main-cover-title mb-16 font-chillaxRegular'>
-      <h1 className='mb-2'>
+      <h1 className='mb-2 tracking-tighter'>
         FRONT-END <strong className='font-chillaxSemibold'>DEVELOPER</strong>
       </h1>
     </div>

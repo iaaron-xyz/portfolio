@@ -19,9 +19,10 @@
     }
     .nav-scroll {
         /* thanks to https://css.glass */
-        background: rgba(255, 255, 255, 0.12);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        background: rgba(15, 23, 42, 0.745);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(6.8px);
+        border-radius: 20px;
         -webkit-backdrop-filter: blur(6.8px);
     }
     .bg-circle {
