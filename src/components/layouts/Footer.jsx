@@ -18,7 +18,7 @@ const FooterContent = () => {
   return (
     <>
       {/* Footer header */}
-      <h2 className='text-7xl mb-6 font-satoshiBold'>
+      <h2 className='text-7xl my-6 font-satoshiBold'>
         Let&apos;s Work Together!
       </h2>
       <h4 className='text-green-400 text-xl'>Ready to work remotely</h4>
@@ -27,11 +27,11 @@ const FooterContent = () => {
       <LinkPage
         text={"LET'S GET IN TOUCH!"}
         iconColor='white'
-        extraClasses='my-48 text-2xl'
+        extraClasses='my-32 text-2xl'
       />
 
       {/* Icons */}
-      <div className='mb-32 flex'>
+      <div className='mb-24 flex'>
         <a href='' className='mx-8'>
           <LinkedinIcon className={iconClasses} h={64} w={64} />
         </a>
