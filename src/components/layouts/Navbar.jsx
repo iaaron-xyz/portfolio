@@ -17,32 +17,27 @@ const Navbar = () => {
   //   classNav += " nav-scroll";
   // }
 
+  const itemClasses =
+    "floating-navbar-items flex items-center justify-center w-32 h-16 mx-2 rounded-md hover:font-satoshiBlack";
+
   return (
     // nav container
-    <nav className='nav-scroll bg-sa z-20 fixed bottom-24 left-1/2 transform -translate-x-1/2 p-8 font-satoshiMedium'>
+    <nav className='floating-navbar z-20 rounded-lg fixed top-12 left-1/2 transform -translate-x-1/2 font-satoshiMedium p-2'>
       {/* Nav items */}
-      <ul className='flex text-slate-200'>
-        <li className='w-32 text-center'>
-          <Link to='/' className='mx-6 hover:font-satoshiBold relative'>
-            HOME
-          </Link>
-        </li>
-        <li className='w-32 text-center'>
-          <Link to='about' className='mx-6 hover:font-satoshiBold relative'>
-            ABOUT
-          </Link>
-        </li>
-        <li className='w-32 text-center'>
-          <Link to='projects' className='mx-6 hover:font-satoshiBold relative'>
-            PROJECTS
-          </Link>
-        </li>
-        <li className='w-32 text-center'>
-          <Link to='contact' className='mx-6 hover:font-satoshiBold relative'>
-            CONTACT
-          </Link>
-        </li>
-      </ul>
+      <div className='flex'>
+        <Link to='/' className={`${itemClasses}`}>
+          HOME
+        </Link>
+        <Link to='about' className={`${itemClasses}`}>
+          ABOUT
+        </Link>
+        <Link to='projects' className={`${itemClasses}`}>
+          WORK
+        </Link>
+        <Link to='contact' className={`${itemClasses}`}>
+          CONTACT
+        </Link>
+      </div>
     </nav>
   );
 };

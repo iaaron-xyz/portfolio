@@ -17,13 +17,15 @@
     footer {
         background: #141414;
     }
-    .nav-scroll {
+    .floating-navbar {
         /* thanks to https://css.glass */
-        background: rgba(15, 23, 42, 0.745);
+        background: rgba(248, 248, 248, 0.568);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(6.8px);
-        border-radius: 20px;
         -webkit-backdrop-filter: blur(6.8px);
+    }
+    .floating-navbar-items:hover {
+        background: rgba(0, 68, 255, 0.079);
     }
     .bg-circle {
         background: rgb(29, 37, 253);
