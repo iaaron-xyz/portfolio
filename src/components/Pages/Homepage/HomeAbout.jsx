@@ -2,7 +2,7 @@ import LinkPage from "../../Parts/LinkPage";
 
 const HomeAbout = () => {
   return (
-    <section className='flex align-center mx-48'>
+    <section className='flex align-center mx-48 xl:mx-24'>
       <HomeAboutDiv content={<HomeAboutTitle />} />
       <HomeAboutDiv content={<HomeAboutContent />} />
     </section>

@@ -13,7 +13,7 @@ const HomeProjects = () => {
 const HomeProjectsTitle = () => {
   return (
     <div>
-      <h2 className='text-7xl mb-24 pl-48 font-chillaxSemibold'>
+      <h2 className='text-7xl mb-24 pl-48 font-chillaxSemibold xl:pl-24'>
         Work & Projects
       </h2>
     </div>
@@ -32,7 +32,7 @@ const HomeProjectsWorks = () => {
 
 const ProjectLeftToRight = () => {
   return (
-    <div className='flex px-48 py-8'>
+    <div className='flex px-48 py-8 xl:px-20'>
       {/* Image container */}
       <HomeProjectsImage />
       {/* Text container */}
@@ -45,7 +45,7 @@ const ProjectLeftToRight = () => {
 
 const ProjectRightToLeft = () => {
   return (
-    <div className='flex px-48 py-8'>
+    <div className='flex px-48 py-8 xl:px-20'>
       {/* Text container */}
       <div className='flex-1 flex flex-col'>
         <HomeProjectsInfo alignValue={"ml-auto"} />
