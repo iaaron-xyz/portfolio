@@ -15,12 +15,12 @@ const AboutPage = () => {
 
 const AboutContentDesc = () => {
   return (
-    <div className='flex mb-48'>
+    <div className='flex mb-48 md:flex-col'>
       {/* title */}
       <AboutMeSectionTitle title='Description' />
 
       {/* Text content */}
-      <div className='flex-1 text-2xl'>
+      <div className='flex-1 text-2xl md:px-20 md:py-12'>
         <AboutMeSectionTextParagraph
           p={`Hi! My name is Aaron, I am a multidisciplinary scientist, artist and
           developer. As a developer I am specialized as Front-end React
@@ -42,12 +42,12 @@ const AboutContentDesc = () => {
 
 const AboutContentSkills = () => {
   return (
-    <div className='flex mb-48'>
+    <div className='flex mb-48 md:flex-col'>
       {/* title */}
       <AboutMeSectionTitle title='My Skills & Knowledge' />
 
       {/* Text content */}
-      <div className='flex-1 text-2xl'>
+      <div className='flex-1 text-2xl md:py-12'>
         {skills.map((skillSection) => {
           return (
             <SkillsField
@@ -65,7 +65,7 @@ const AboutContentSkills = () => {
 const AboutMeSectionTitle = ({ title }) => {
   return (
     <div className='flex-1'>
-      <h2 className='text-6xl font-chillaxBold pl-48 pr-12 text-center'>
+      <h2 className='text-6xl font-chillaxBold pl-48 pr-12 xl:pl-20'>
         {title}
       </h2>
     </div>
@@ -73,14 +73,14 @@ const AboutMeSectionTitle = ({ title }) => {
 };
 
 const AboutMeSectionTextParagraph = ({ p }) => {
-  return <p className='w-2/3 mb-8 leading-'>{p}</p>;
+  return <p className='w-2/3 mb-8 xl:w-4/5 md:w-full'>{p}</p>;
 };
 
 const SkillsField = ({ title, skillsList }) => {
   const listSize = skillsList.length;
 
   return (
-    <div className='mb-16 w-2/3'>
+    <div className='mb-16 w-2/3 xl:w-4/5 md:px-20 md:w-full'>
       <h3 className='text-3xl font-satoshiBold'>{title}</h3>
       {skillsList.map((skill, index) => {
         // Add a bullet item
