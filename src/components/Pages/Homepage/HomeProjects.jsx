@@ -13,7 +13,7 @@ const HomeProjects = () => {
 const HomeProjectsTitle = () => {
   return (
     <div>
-      <h2 className='text-7xl mb-24 pl-48 font-chillaxSemibold xl:pl-24'>
+      <h2 className='text-7xl mb-24 pl-48 font-chillaxSemibold xl:pl-24 lg:pl-16'>
         Work & Projects
       </h2>
     </div>
@@ -32,7 +32,7 @@ const HomeProjectsWorks = () => {
 
 const ProjectLeftToRight = () => {
   return (
-    <div className='flex px-48 py-8 xl:px-20'>
+    <div className='flex px-48 py-28 xl:px-20 lg:px-16 md:flex-col'>
       {/* Image container */}
       <HomeProjectsImage />
       {/* Text container */}
@@ -45,20 +45,20 @@ const ProjectLeftToRight = () => {
 
 const ProjectRightToLeft = () => {
   return (
-    <div className='flex px-48 py-8 xl:px-20'>
+    <div className='flex px-48 py-8 xl:px-20 lg:px-16 md:flex-col'>
       {/* Text container */}
-      <div className='flex-1 flex flex-col'>
+      <div className='flex-1 flex flex-col md:order-2'>
         <HomeProjectsInfo alignValue={"ml-auto"} />
       </div>
       {/* Image container */}
-      <HomeProjectsImage alignValue='ml-auto' />
+      <HomeProjectsImage alignValue='ml-auto md:order-1 md:ml-0' />
     </div>
   );
 };
 
 const HomeProjectsImage = ({ alignValue = "" }) => {
   return (
-    <div className='flex-1 ml-auto'>
+    <div className='flex-1 ml-auto md:ml-0 md:mb-8'>
       <a
         href=''
         className={`${alignValue} block project-image bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm`}

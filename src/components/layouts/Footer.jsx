@@ -18,7 +18,7 @@ const FooterContent = () => {
   return (
     <>
       {/* Footer header */}
-      <h2 className='text-7xl my-6 font-satoshiBold'>
+      <h2 className='text-7xl my-6 font-satoshiBold md:text-center md:text-6xl'>
         Let&apos;s Work Together!
       </h2>
       <h4 className='text-green-400 text-xl'>Ready to work remotely</h4>

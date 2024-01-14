@@ -38,9 +38,10 @@
         border-radius: 500px;
         position: absolute;
         box-shadow: 0 0 50px 15px #80a6ff6c;
+        margin-top: 9rem;
     }
     .main-cover-title {
-        font-size: 8.5rem;
+        font-size: 7rem;
         text-align: center;
     }
 

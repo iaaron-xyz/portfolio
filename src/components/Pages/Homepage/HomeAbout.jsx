@@ -2,7 +2,7 @@ import LinkPage from "../../Parts/LinkPage";
 
 const HomeAbout = () => {
   return (
-    <section className='flex align-center mx-48 xl:mx-24'>
+    <section className='flex align-center py-16 mx-48 xl:mx-24 lg:mx-16 md:flex-col'>
       <HomeAboutDiv content={<HomeAboutTitle />} />
       <HomeAboutDiv content={<HomeAboutContent />} />
     </section>
@@ -10,7 +10,7 @@ const HomeAbout = () => {
 };
 
 const HomeAboutDiv = ({ content }) => {
-  return <div className='flex-1 my-24'>{content}</div>;
+  return <div className='flex-1 my-24 md:mb-8 md:mt-16'>{content}</div>;
 };
 
 const HomeAboutTitle = () => {
@@ -24,7 +24,7 @@ const HomeAboutContent = () => {
         Hi! I&apos;m Aaron. I am a Front-end React Developer. My work focus in
         creating beautiful and easy to use interfaces for websites and web-apps.
       </p>
-      <p className='mb-24'>
+      <p className='mb-12'>
         Besides that, I also have the skills to work as data scientist or 3D
         Game Artist, click on the more details button to check out my portfolios
         and get more detailed information about me.
